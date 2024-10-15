@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Constants">
+      <UniqueIdentifier>{f5fd90fe-d5bb-4777-a65f-ceaaf754fb48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Functions">
+      <UniqueIdentifier>{a2121950-1052-44c0-b52f-2e725ce7fd11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fvector">
+      <UniqueIdentifier>{5cf3ddaf-9daa-4ab6-89dc-8adb1b0957fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GlobalMatrix">
+      <UniqueIdentifier>{bf1d7e7a-024d-439b-8112-3e5b7f37e30c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{6a6a246f-3968-433d-b62a-9f573470fa3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Matrix">
+      <UniqueIdentifier>{f84200dc-d970-42e2-83a6-940c3607cef0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ModifiedGaussianElimination">
+      <UniqueIdentifier>{9e5f2d66-7da6-47f7-b208-ba92efb781b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Numeration">
+      <UniqueIdentifier>{2defbd89-51fd-4c77-90e4-f24f57a140f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Partition">
+      <UniqueIdentifier>{bd2d4005-592a-4de7-8f51-f60e46616c2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StiffnessMatrix">
+      <UniqueIdentifier>{44880b51-bf0b-4298-931d-bfdddc6be2bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tension">
+      <UniqueIdentifier>{46a78fcd-a9e3-4fec-8e74-05eb87a9a9dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoordsTranslation">
+      <UniqueIdentifier>{ad06c9a7-b84a-4eaa-abd4-9458624eebc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UsageInterface">
+      <UniqueIdentifier>{c58b88ce-f744-489a-8861-72aef3611b08}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\gaussianelimination.cpp" />
+    <ClCompile Include="..\Source\pch.cpp" />
+    <ClCompile Include="..\Source\Tension\Tension.cpp">
+      <Filter>Tension</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\StiffnessMatrix\stiffnessmatrix.cpp">
+      <Filter>StiffnessMatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Partition\partition.cpp">
+      <Filter>Partition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Numeration\numeration.cpp">
+      <Filter>Numeration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ModifiedGaussianElimination\ModifiedGaussianElimination.cpp">
+      <Filter>ModifiedGaussianElimination</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Matrix\Matrix.cpp">
+      <Filter>Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Math\determinant.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Math\permutations.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Math\round.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\GlobalMatrix\globalmatrix.cpp">
+      <Filter>GlobalMatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Fvector\fvector.cpp">
+      <Filter>Fvector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Functions\deltafi.cpp">
+      <Filter>Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Functions\deltapsi.cpp">
+      <Filter>Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Functions\psi.cpp">
+      <Filter>Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Constants\globalconsts.cpp">
+      <Filter>Constants</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Functions\fi.cpp">
+      <Filter>Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\CoordsTranslation\CoordsTranslation.cpp">
+      <Filter>CoordsTranslation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UsageInterface\FEMInterface.cpp">
+      <Filter>UsageInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UsageInterface\InputValidator.cpp">
+      <Filter>UsageInterface</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\gaussianelimination.h" />
+    <ClInclude Include="..\Source\pch.h" />
+    <ClInclude Include="..\Source\Tension\Tension.h">
+      <Filter>Tension</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Partition\partition.h">
+      <Filter>Partition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Numeration\numeration.h">
+      <Filter>Numeration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\ModifiedGaussianElimination\ModifiedGaussianElimination.h">
+      <Filter>ModifiedGaussianElimination</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Matrix\Matrix.h">
+      <Filter>Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Math\determinant.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Math\permutations.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Math\round.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\GlobalMatrix\globalmatrix.h">
+      <Filter>GlobalMatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Fvector\fvector.h">
+      <Filter>Fvector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Functions\deltafi.h">
+      <Filter>Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Functions\deltapsi.h">
+      <Filter>Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Functions\psi.h">
+      <Filter>Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Constants\globalconsts.h">
+      <Filter>Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Functions\fi.h">
+      <Filter>Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\CoordsTranslation\CoordsTranslation.h">
+      <Filter>CoordsTranslation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\UsageInterface\FEMInterface.h">
+      <Filter>UsageInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\UsageInterface\InputValidator.h">
+      <Filter>UsageInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\StiffnessMatrix\stiffnessmatrix.h">
+      <Filter>StiffnessMatrix</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
