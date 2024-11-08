@@ -315,7 +315,7 @@ void MainWindow::onSaveTensionActionClicked()
 
 void MainWindow::onSaveUpdatedVerticesActionClicked()
 {
-    this->updatedVerticesTableModel->saveZPS("updated_vertices.txt");
+    this->updatedVerticesTableModel->saveZPS("updated_vertices_qt.txt");
 }
 
 void MainWindow::onDeleteRowsButtonClicked()
@@ -389,7 +389,7 @@ void MainWindow::onCalculateButtonClicked()
     try
     {
         algoInterface.calculateAll();
-        this->movementTableModel->setZPS(Converter::stdAktVecToQvec(algoInterface.getModifiedAKT()));
+        this->movementTableModel->setZPS(Converter::stdMovementsVecToQvec(algoInterface.getMovements()));
         this->tensionsTableModel->setZPS(Converter::stdTensionsVecToQvec(algoInterface.getTensions()));
         this->updatedVerticesTableModel->setZPS(Converter::stdAktVecToQvec(algoInterface.getModifiedAKT()));
         currPlot = CurrentPlot::Deprecated;

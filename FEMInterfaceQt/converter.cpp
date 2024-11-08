@@ -95,4 +95,15 @@ QVector<ITableDisplayable*> Converter::stdTensionsVecToQvec(const std::vector<st
     return res;
 }
 
+QVector<ITableDisplayable*> Converter::stdMovementsVecToQvec(const std::vector<double>& movements)
+{
+    QVector<ITableDisplayable*> res(movements.size() / 3);
+    for (int i = 0; i < res.size(); ++i)
+    {
+        res[i] = new VertexData(movements[i * 3 + 0], movements[i * 3 + 1], movements[i * 3 + 2]);
+    }
+    return res;
+}
+
+
 std::vector<int> Converter::order {0, 2, 7, 5, 12, 14, 19, 17, 1, 4, 6, 3, 8, 9, 11, 10, 13, 16, 18, 15};

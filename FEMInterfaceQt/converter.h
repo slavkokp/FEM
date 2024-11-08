@@ -22,6 +22,7 @@ public:
 
     static QVector<ITableDisplayable*> stdAktVecToQvec(const std::vector<std::vector<double>>& data);
     static QVector<ITableDisplayable*> stdTensionsVecToQvec(const std::vector<std::vector<double>>& data);
+    static QVector<ITableDisplayable*> stdMovementsVecToQvec(const std::vector<double>& movements);
 
     // order[i] contains the global number of ith displayed vertex, i is [0, 19]
     static std::vector<int> order;
