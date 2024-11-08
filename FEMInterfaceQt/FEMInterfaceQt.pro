@@ -40,10 +40,8 @@ HEADERS += \
 
 
 CONFIG(debug, debug|release) {
-    #LIBS += -L"C:/Users/User/source/repos/WalkWithoutLagi/x64/Debug/" -lFEM
     LIBS += -L"$$PWD/../x64/Debug/" -lFEM
 } else {
-    #LIBS += -L"C:/Users/User/source/repos/WalkWithoutLagi/x64/Release/" -lFEM
     LIBS += -L"$$PWD/../x64/Release/" -lFEM
 }
 
@@ -54,7 +52,7 @@ LIBS += -L"C:/Program Files/Matplot++ 1.2.0/lib/Matplot++/" -lnodesoup
 
 LIBS += -lGdi32 -lkernel32 -luser32
 
-INCLUDEPATH += "C:/Users/User/source/repos/WalkWithoutLagi/Source/"
+INCLUDEPATH += "../Source/"
 
 
 
